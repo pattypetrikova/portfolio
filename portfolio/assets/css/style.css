@@ -1,0 +1,245 @@
+/* ----------- RESET -------- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  /* -------- COLORS--------- */
+  --black: 
+    rgb(15, 15, 15);
+  --baltic-sea: 
+    rgba(42, 43, 46, 1);
+  --perfume: 
+    rgba(209, 192, 245, 1);
+  --razzle-dazzle-rose: 
+    rgba(244, 83, 208, 1);
+  --white: 
+    rgba(255, 255, 255, 1);
+  /* -------- FONT SYSTEM --------- */
+  --font-text: 0.875rem;
+  --font-desc: 1rem;
+  --font-subtitles: 1.125rem;
+  --font-home-desc: 1.5rem;
+  --font-h1: 2.25rem;
+  --font-headline: 3rem;
+  --font-headline-big: 4.5rem;
+  /* -------- SPACING SYSTEM MARGIN --------- */
+  --m-2: 2rem;
+  --m-3: 3rem;
+}
+
+/* ----------- GENERAL STYLES ------------ */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--baltic-sea);
+  color: var(--white);
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--m-3);
+  margin-top: var(--m-2);
+}
+
+.grid-3-cols {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: var(--font-headline-big);
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+}
+
+/*  ===================== HEADER ================== */
+.circle {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 8px;
+  background-color: var(--black);
+}
+
+.nav__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.nav__p {
+  font-size: 40px;
+}
+
+.nav__name {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 1.4;
+  letter-spacing: 3px;
+  margin-left: 0.8rem;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.nav__menu {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: var(--font-subtitles);
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 1.8rem;
+          column-gap: 1.8rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.nav__toggle {
+  color: var(--white);
+  display: none;
+}
+
+.nav__close {
+  color: var(--white);
+  display: none;
+}
+
+/*  ===================== HOME SECTION ================== */
+.home {
+  position: relative;
+  /*  ============== SHAPES ============== */
+  /*  ============== CONTENT ============== */
+}
+
+.home h1 {
+  font-weight: lighter;
+}
+
+.home strong {
+  font-weight: lighter;
+}
+
+.home__circle--small {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: var(--razzle-dazzle-rose);
+  position: absolute;
+  left: -17rem;
+  top: -2rem;
+}
+
+.home__circle--middle {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: var(--razzle-dazzle-rose);
+  position: absolute;
+  right: -17rem;
+  top: -2rem;
+}
+
+.home__circle--biggest {
+  height: 5.5rem;
+  width: 5.5rem;
+  border-radius: 50%;
+  background-color: var(--razzle-dazzle-rose);
+  position: absolute;
+  top: 2rem;
+  left: -2rem;
+}
+
+.home__leak--biggest {
+  position: absolute;
+  bottom: -13rem;
+  left: -38rem;
+}
+
+.home__leak--smaller {
+  position: absolute;
+  bottom: -10rem;
+  right: -31rem;
+}
+
+.home__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home__text {
+  padding: 4rem 9rem;
+}
+
+.home__paty {
+  color: var(--perfume);
+}
+
+.home__description {
+  font-size: var(--font-headline);
+}
+
+.home__city {
+  font-size: var(--font-home-desc);
+  padding: 1rem  0 0 13rem;
+}
+
+.home__picture {
+  position: absolute;
+  right: -12rem;
+  bottom: -4rem;
+}
+/*# sourceMappingURL=style.css.map */
