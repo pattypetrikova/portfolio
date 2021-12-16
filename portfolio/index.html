@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--//////////////// FAVICON //////////////////-->
+    <!------------------ FAVICON ---------------------->
 
-    <!--//////////////// ICONS //////////////////-->
+    <!----------------------- ICONS ----------------------->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-    <!--//////////////// FONT POPPINS,   BEBAS NEUE //////////////////-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!----------------------- FONT POPPINS,   BEBAS NEUE ----------------------->
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
 
-    <!--//////////////// CSS STYLE //////////////////-->
+    <!----------------------- CSS STYLE ----------------------->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfolio</title>
 </head>
@@ -73,8 +76,17 @@
                 <div class="home__circle--small"></div>
                 <div class="home__circle--middle"></div>
                 <div class="home__circle--biggest"></div>
-                <img class="home__leak--biggest" src="./assets/img/big vector.svg" alt="leak">
                 <img class="home__leak--smaller" src="./assets/img/smaller leak.svg" alt="leak">
+                <svg class="home__leak--biggest" width="810" height="241" viewBox="0 0 810 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_234_5)">
+                    <path d="M252.083 260.741C48.9949 196.726 39.5404 309.554 75.5082 343.185C209.053 468.05 228.119 260.874 443.77 367.474C606.034 464.811 867.091 244.441 670.781 137.214C531.01 60.8681 454.778 97.5608 443.666 166.065C440.764 183.959 431.753 317.375 252.083 260.741Z" fill="#3F3E3E"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_234_5">
+                    <rect width="810" height="241" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
                 
             </div>
             <div class="home__main">
@@ -89,23 +101,120 @@
                     <h1 class="home__city"> • based in prague</h1>
                 </div>
                 <div class="home__img">
-                    <img src="./assets/img/Vector 3 complete.png" alt="" class="home__picture">
+                    <img src="./assets/img/Vector 3.svg" alt="" class="home__picture">
+                    <img src="./assets/img/Vector 3 me.png" class="home__picture" alt="">
                 </div>
             </div>  
             
         </div>
     </section>
-    <!-- ===================== sSKILLS SECTION ================== -->
-    <section class="skills"></section>
+    <!-- ===================== SKILLS SECTION ================== -->
+   
+    <section class="skill container">
+        <svg class="skill__backround" width="506" height="550" viewBox="0 0 506 550" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M139.629 543.361C283.997 581.283 257.074 436.096 305.297 440.223C633.593 468.323 514.756 111.322 253.799 128.916C165.629 134.86 186.494 94.6372 164.921 49.5702C103.152 -79.4622 -88.5696 81.81 49.0839 138.377C153.713 181.372 68.5694 315.349 47.0276 348.025C5.42746 432.636 62.7319 523.162 139.629 543.361Z" fill="#3F3F3E"/>
+            </svg>
+        <h2 class="skill__toptitle">Skills</h2>
+        <h3 class="skill__subtitle">What I am using for my projects </h3>
+        <h3 class="skill__designer">Designer</h3>
+            <div class="skill__items grid">
+                <!-- SKILL ITEM 1 -->
+                <div class="skill__item--designer">
+                    <i class='bx bx-desktop skill__icon'></i>
+                    <h4 class="skill__item--title">UI UX</h4>
+                    <p class="skill__item--description">typography,
+                        colors, spacing</p>
+                </div>
+                <!-- SKILL ITEM 2 -->
+                <div class="skill__item--designer">
+                    <i class='bx bxl-figma skill__icon' ></i>
+                    <h4 class="skill__item--title">Figma</h4>
+                    <p class="skill__item--description">Basic layouts 
+                        and components</p>
+                </div>
+                <!-- SKILL ITEM 3 -->
+                <div class="skill__item--designer">
+                    <i class='bx bxs-photo-album skill__icon' ></i>
+                    <h4 class="skill__item--title">PHOTOSHOP & corel</h4>
+                    <p class="skill__item--description">logos, banners, bussines cards</p>
+                </div>
+            </div>
+        <h3 class="skill__developer">Frontend developer</h3>
+        <div class="skill__items grid lighter">
+            <!-- SKILL ITEM 4 -->
+            <div class="skill__item--developer">
+                <i class='bx bxl-html5 skill__icon' ></i>
+                <h4 class="skill__item--title">html</h4>
+                <p class="skill__item--description">semantic html</p>
+            </div>
+            <!-- SKILL ITEM 5 -->
+            <div class="skill__item--developer">
+                <i class='bx bxl-css3 skill__icon' ></i>
+                <h4 class="skill__item--title">css</h4>
+                <p class="skill__item--description">Flexbox, grid, Scss,
+                    Responzive design, BEM</p>
+            </div>
+            <!-- SKILL ITEM 6 -->
+            <div class="skill__item--developer">
+                <i class='bx bxl-javascript skill__icon '></i>
+                <h4 class="skill__item--title">javascript</h4>
+                <p class="skill__item--description"> JS syntax, basic operators, ES6, JQuery</p>
+            </div>
+        </div>
+    </section>
     <!-- ===================== PORTFOLIO SECTION ================== -->
-    <section class="portfolio"></section>
+    <section class="portfolio">
+        <div class="portfolio__wrap">
+            <h2 class="portfolio__title">Portfolio</h2>
+            <h3 class="portfolio__subtitle">Some Things I’ve Built</h3>
+            <div class="portfolio__grid">
+                <img src="./assets/img/preview.jpg" alt="portfolio" class="portfolio__img--1 ">
+                <img src="./assets/img/preview.jpg" alt="portfolio" class="portfolio__img--2 ">
+                <img src="./assets/img/preview.jpg" alt="portfolio" class="portfolio__img--3 ">
+                <img src="./assets/img/preview.jpg" alt="portfolio" class="portfolio__img--4 ">
+                <img src="./assets/img/preview.jpg" alt="portfolio" class="portfolio__img--5 ">
+                <img src="./assets/img/preview.jpg" alt="portfolio" class="portfolio__img--6 ">
+                <img src="./assets/img/preview.jpg" alt="portfolio" class="portfolio__img--7 ">
+            </div>
+        </div>
+    </section>
     <!-- ===================== ABOUT SECTION ================== -->
-    <section class="about"></section>
+    <section class="about">
+    <div class="about__text">
+        <h2 class="about__title">About me</h2>
+        <h3 class="about__subtitle">lear more about my story</h3>
+        <p class="about__paragraph">My web-jourey actually  started wen I was 12 years old, back then I discovered blog.cz , place where I can write my storries , make graphic content, layouts and I also touch little bit of HTML. Instantly felt in love with it.</p>
+        <p class="about__paragraph">During my life I tried a lot of different carriers but still I knew that from most of all i want to <strong class="about__create">CREATE</strong> . </p>
+        <p class="about__paragraph"> in spring 2021 I left my previous carriers and I started study full time web design , web development. I went from online courses on udemy to Czech courses in Prague, touch some intresting projects, meet very nice people and one thing figure out for sure - this is only my beggining on this journey.</p>
+    </div>
+    <div class="about__pic">
+        <img src="./assets/img/meeeee.jpg" alt="portfolio" class="about__image">
+    </div>
+
+    </section>
     <!-- ===================== CONTACT SECTION ================== -->
-    <section class="contact"></section>
+    <section class="contact">
+<div class="contact container">
+    <div class="contact__textarea">
+        <h2 class="contact__title">Contact</h2>
+        <h3 class="contact__subtitle">where you can find me</h3>
+        <div class="contact__icons">
+            <a  class="contact__link"href="#"><i class='bx bxl-instagram-alt contact__icon'></i></a>
+            <a  class="contact__link"href="#"><i class='bx bxl-facebook-circle contact__icon' ></i>
+            <a  class="contact__link"href="#"><i class='bx bxl-instagram-alt contact__icon'></i></a>
+            <a  class="contact__link"href="#"><i class='bx bxl-instagram-alt contact__icon'></i></a>
+        </div>
+        <button class="contact__button">contact me</button> 
+    </div>
+</div>
+
+    </section>
 </main>
 
-<footer class="footer"></footer>
+<footer class="footer">
+    <h3 class="footer__text">© designed & coded by
+        patricie petrikova 2021</h3>
+</footer>
 
 </body>
 </html>
