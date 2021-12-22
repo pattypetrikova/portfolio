@@ -5,7 +5,28 @@ const toggle = document.querySelector(".nav__toggle")
 const close = document.querySelector(".nav__close")
 
 
-console.log(menu,toggle, close)
+if(toggle) {
+    toggle.addEventListener("click", ()=> {
+        menu.classList.add("show-menu")
+    })
+}
+
+if(close) {
+    close.addEventListener("click", ()=> {
+        menu.classList.remove("show-menu")
+    })
+}
+
+
+const link = document.querySelectorAll(".nav__link");
+
+function linkAction () {
+    const menu = document.querySelector(".nav__menu")
+    menu.classList.remove(".show-menu")
+
+}
+
+link.forEach(n => n.addEventListener("click", linkAction));
 
 /*=============== SCROOL REVEAL ===============*/
 

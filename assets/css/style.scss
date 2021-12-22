@@ -83,8 +83,7 @@ section {
     gap: 3rem;
 }
 
-.main {
-}
+
 img{
     max-width: 100%;
 }
@@ -916,10 +915,54 @@ header {
 
 
 @media (max-width: 730px) {
+
+
+    //  Nav toggle responzive
+     .nav__menu {
+         position: fixed;
+         background-color: var(--baltic-sea);
+         width: 80%;
+         height: 100vh;
+         top: 0;
+         right: -100%;
+        padding: 4rem 0rem 4rem 3rem;
+        border-radius: 1rem 0 0 1rem;
+        transition: 0.3s;
+        z-index: 100;
+        }
+
+     .nav__list {
+         display: flex;
+         flex-direction: column;
+         row-gap: 1rem;
+        }
+     
+     .nav__toggle {
+        display: inline-flex;
+        font-size: 1.8rem;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1.25rem;
+        }
+
+     .nav__close {
+        display: inline-flex;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 1rem;
+        right: 1.25rem;
+        cursor: pointer;
+        }
+
     .about {
         &__pic img {
            max-height: 40rem;
         }
+    }
+
+    .show-menu {
+        right: 0;
     }
 
     .portfolio {
