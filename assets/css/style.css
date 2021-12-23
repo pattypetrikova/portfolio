@@ -204,6 +204,29 @@ header {
       align-self: center;
 }
 
+.nav__link {
+  position: relative;
+}
+
+.nav__link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -2px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav__link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .nav__toggle {
   color: var(--white);
   display: none;
@@ -445,6 +468,16 @@ header {
   position: absolute;
   bottom: -15rem;
   right: -30rem;
+  opacity: 0.5;
+}
+
+.home .leak4 {
+  width: 100rem;
+  height: 50rem;
+  background: radial-gradient(circle, rgba(255, 145, 0, 0.856) 0%, rgba(255, 255, 255, 0) 47%, rgba(218, 124, 16, 0) 100%);
+  position: absolute;
+  top: -5rem;
+  left: -10rem;
   opacity: 0.5;
 }
 
