@@ -48,3 +48,28 @@ scroll.reveal(".skill__item-wrap05", {delay:700} )
 scroll.reveal(".skill__item-wrap06", {delay:800} )
 scroll.reveal(".portfolio__grid, header, .contact__text" )
 
+/*=============== MODAL ===============*/
+
+const modal = document.querySelector(".modal")
+const previews = document.querySelectorAll("#preview")
+const original = document.querySelector(".portfolio__img");
+
+console.log(modal, previews,original)
+
+previews.forEach((preview) => {
+   preview.addEventListener('click', () => {
+    modal.classList.add('open');
+
+    const originalSrc = preview.getAttribute("data-original");
+    console.log(originalSrc);
+    original.src = originalSrc;
+   });
+});
+
+modal.addEventListener("click", (e) => {
+    if (e.target.classList.contains("modal")) {
+        modal.classList.remove("open");
+    }
+})
+
+

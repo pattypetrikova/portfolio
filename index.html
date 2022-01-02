@@ -118,7 +118,7 @@
                     <div class="skill__item--designer">
                         <i class='bx bx-desktop skill__icon'></i>
                         <h4 class="skill__item--title">UI UX</h4>
-                        <p class="skill__item--description">typography,
+                        <p class="skill__item--description">typography, 
                         colors, spacing</p>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                     <div class="skill__item--designer">
                         <i class='bx bxl-figma skill__icon' ></i>
                         <h4 class="skill__item--title">Figma</h4>
-                        <p class="skill__item--description">Basic layouts 
+                        <p class="skill__item--description">basic layouts 
                         and components</p>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                 <div class="skill__item--developer">
                     <i class='bx bxl-html5 skill__icon' ></i>
                     <h4 class="skill__item--title">html</h4>
-                    <p class="skill__item--description">semantic html</p>
+                    <p class="skill__item--description">semantic html, forms and validation</p>
                 </div>
             </div>
             <!-- SKILL ITEM 5 -->
@@ -152,7 +152,7 @@
                 <div class="skill__item--developer">
                     <i class='bx bxl-css3 skill__icon' ></i>
                     <h4 class="skill__item--title">css</h4>
-                    <p class="skill__item--description">Flexbox, grid, Scss,
+                    <p class="skill__item--description">flexbox, grid, Scss,
                     Responzive design, BEM</p>
                 </div>
             </div>
@@ -173,26 +173,26 @@
             <h2 class="portfolio__title">Portfolio</h2>
             <h3 class="portfolio__subtitle">Some Things I’ve Built</h3>
             <div class="portfolio__grid">
-                <div class="portfolio__img--1 ">
-                    <img src="./assets/img/preview.jpg" alt="portfolio" class="portfolio__img ">
+                <div class="portfolio__img--1">
+                    <img src="./assets/img/preview.jpg" alt="portfolio" data-original="./assets/img/preview.jpg" class="portfolio__img ">
                 </div>
-                <div class="portfolio__img--2 ">
-                    <img src="./assets/img/preview2.jpg" alt="portfolio" class="portfolio__img ">
+                <div class="portfolio__img--2">
+                    <img src="./assets/img/preview2.jpg" alt="portfolio" data-original="./assets/img/preview2.jpg" class="portfolio__img ">
                 </div>
-                <div class="portfolio__img--3 ">
-                    <img src="./assets/img/preview5.jpg" alt="portfolio" class="portfolio__img ">
+                <div class="portfolio__img--3" id="preview"  data-original="./assets/img/preview2.jpg" src="./assets/img/preview5.jpg" >
+                    <img src="./assets/img/preview5.jpg" alt="portfolio" data-original="./assets/img/preview2.jpg" class="portfolio__img ">
                 </div>
-                <div class="portfolio__img--4 ">
-                    <img src="./assets/img/preview7.jpg" alt="portfolio" class="portfolio__img ">
+                <div class="portfolio__img--4" id="preview" data-original="./assets/img/preview7.jpg" src="./assets/img/preview7.jpg">
+                    <img src="./assets/img/preview7.jpg" alt="portfolio" data-original="./assets/img/preview7.jpg" class="portfolio__img ">
                 </div>
-                <div class="portfolio__img--5 ">
-                    <img src="./assets/img/preview3.jpg" alt="portfolio" class="portfolio__img ">
+                <div class="portfolio__img--5">
+                    <img src="./assets/img/preview3.jpg" alt="portfolio"  data-original="./assets/img/preview3.jpg"class="portfolio__img ">
                 </div>
-                <div class="portfolio__img--6 ">
-                    <img src="./assets/img/preview4.jpg" alt="portfolio" class="portfolio__img ">
+                <div class="portfolio__img--6">
+                    <img src="./assets/img/preview4.jpg" alt="portfolio" data-original="./assets/img/preview4.jpg" class="portfolio__img ">
                 </div>
-                <div class="portfolio__img--7 ">
-                    <img src="./assets/img/preview6.jpg" alt="portfolio" class="portfolio__img">
+                <div class="portfolio__img--7" id="preview" data-original="./assets/img/preview6.jpg" src="./assets/img/preview6.jpg">
+                    <img src="./assets/img/preview6.jpg" alt="portfolio" data-original="./assets/img/preview6.jpg" class="portfolio__img">
                 </div>
             </div>
         </div>
@@ -245,6 +245,14 @@
     <h3 class="footer__text">© designed & coded by
         patricie petrikova 2021</h3>
 </footer>
+
+<!-- /////// MODALNI OKNO ////// -->
+<div class="modal">
+    <div class="modal-dialog">
+        <img src="./assets/img/preview7.jpg" alt="" class="modal-dialog__img">
+    </div>       
+</div>
+
 
 <!-- /////// SCROOLL REVEAL ////// -->
 <script src="./assets/js/scrollreveal.min.js"></script>
