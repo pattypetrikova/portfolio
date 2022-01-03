@@ -22,7 +22,7 @@ const link = document.querySelectorAll(".nav__link");
 
 function linkAction () {
     const menu = document.querySelector(".nav__menu")
-    menu.classList.remove(".show-menu")
+    menu.classList.remove("show-menu")
 
 }
 
@@ -34,27 +34,37 @@ const scroll = ScrollReveal( {
     origin: "top",
     distance: "60px",
     duration: 2500,
-    delay: 200,
+    delay: 0,
 
 })
 
+// after open/refresh page
 scroll.reveal(".home__text, .about__text", {origin:"left"} )
 scroll.reveal(".home__picture, .about__image", {origin:"right"} )
-scroll.reveal(".skill__item-wrap01", {delay:300} )
-scroll.reveal(".skill__item-wrap02", {delay:400} )
-scroll.reveal(".skill__item-wrap03", {delay:500} )
-scroll.reveal(".skill__item-wrap04", {delay:600} )
-scroll.reveal(".skill__item-wrap05", {delay:700} )
-scroll.reveal(".skill__item-wrap06", {delay:800} )
+scroll.reveal(".skill__item-wrap01", {delay:150} )
+scroll.reveal(".skill__item-wrap02", {delay:200} )
+scroll.reveal(".skill__item-wrap03", {delay:250} )
+scroll.reveal(".skill__item-wrap04", {delay:300} )
+scroll.reveal(".skill__item-wrap05", {delay:350} )
+scroll.reveal(".skill__item-wrap06", {delay:400} )
 scroll.reveal(".portfolio__grid, header, .contact__text" )
+
+// after breakpoint - page resize
+const heroTextBox = document.querySelector(".home__text");
+
+window.addEventListener('resize', function(event) {
+    heroTextBox.removeAttribute("style");
+    scroll.reveal(".home__text", {origin:"left"} )
+});
 
 /*=============== MODAL ===============*/
 
 const modal = document.querySelector(".modal")
-const previews = document.querySelectorAll("#preview")
-const original = document.querySelector(".portfolio__img");
+const previews = document.querySelectorAll(".preview")
+const modalImg = modal.querySelector("img")
+//const original = document.querySelector(".portfolio__img");
 
-console.log(modal, previews,original)
+console.log(modal, previews)
 
 previews.forEach((preview) => {
    preview.addEventListener('click', () => {
@@ -62,7 +72,7 @@ previews.forEach((preview) => {
 
     const originalSrc = preview.getAttribute("data-original");
     console.log(originalSrc);
-    original.src = originalSrc;
+    modalImg.src = originalSrc;
    });
 });
 

@@ -92,7 +92,7 @@ button {
 
 h1 {
   font-size: 10vh;
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -142,7 +142,7 @@ header {
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .nav {
@@ -1264,7 +1264,7 @@ header {
 
 @media (max-width: 1063px) {
   .home__text {
-    width: 30rem;
+    width: 27rem;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -1369,6 +1369,15 @@ header {
 }
 
 @media (max-width: 600px) {
+  .home__text {
+    width: 20rem;
+  }
+  .home__description {
+    font-size: 2.2rem;
+  }
+  .home__city {
+    font-size: 1.5rem;
+  }
   .grid {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
